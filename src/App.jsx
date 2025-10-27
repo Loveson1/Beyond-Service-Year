@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import { Navbar, Hero, Story } from './components/index';
+import {  Hero,Brand, Story } from './components/index';
 
 function App() {
   return (
-    <div>
-    great
-    <Navbar/>
+   <div className='bg-black'>
+ 
+    <Hero/>
+    <Story/>
+    <Brand/>
     </div>
   );
 }

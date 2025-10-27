@@ -1,8 +1,9 @@
-import Navbar from "./navbar";
+import Brand from "./brand-partners";
 import Hero from "./hero";
 import Story from "./story";
 export{
-    Navbar,
+
     Hero,
+    Brand,
     Story,
 }
