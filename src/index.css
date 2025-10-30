@@ -2,67 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
- margin: 0 auto;
+  margin: 0 auto;
 
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
- 
+
   overflow-x: hidden;
   padding: 0;
 }
-
 
 @layer base {
   /* utility classes */
 
   .container {
-    @apply pt-[30px] sm:px-[50px] px-[24px];
+    @apply pt-[30px] sm:px-[50px] px-[24px] m-auto;
   }
 
-  .yellow{
-    @apply text-yellow
+  .yellow {
+    @apply text-yellow;
+  }
+    .black {
+    @apply text-black;
   }
 
+  .card {
+    @apply p-[24px] rounded-[15px] bg-yellow   border-none ;
+  }
+
+  .card-img {
+    @apply  rounded-[15px] p-[24px]  bg-blue bg-cover hover:scale-105 duration-500 ;
+  }
 
   .animate-scroll:hover {
-  animation-play-state: paused;
-}
-/* text styles */
+    animation-play-state: paused;
+  }
+  /* text styles */
 
-p{
-  @apply lg:text-lg  text-[16px] text-white
-}
+  p {
+    @apply lg:text-lg  text-[16px] text-white;
+  }
 
-ul, li, a{
-  @apply text-[16px]  list-none text-white opacity-90
-}
+  ul,
+  li,
+  a {
+    @apply text-[16px]  list-none text-white opacity-90;
+  }
 
-ul, li:hover, a:hover{
-  @apply  text-yellow opacity-100 
-}
+  ul,
+  li:hover,
+  a:hover {
+    @apply text-yellow opacity-100;
+  }
 
-h1{
-  @apply sm:text-6xl text-white text-3xl
-}
+  h1 {
+    @apply sm:text-6xl text-white text-3xl;
+  }
 
-/* button style */
-.btn-yellow{
-  @apply text-black bg-yellow py-[12px] px-[22px]  rounded-xl border-black border-2
-}
-.btn-white{
-  @apply text-black bg-white py-[12px] px-[22px]  rounded-xl border-black border-2
-}
-.btn:hover{
-  @apply text-white bg-black py-[12px] px-[22px]  rounded-xl border-white border-2 duration-500 ease-in-out
-}
+  h2 {
+    @apply sm:text-3xl text-white text-[20px];
+  }
 
+  /* button style */
+  .btn-yellow {
+    @apply text-black bg-yellow py-[12px] px-[22px]  rounded-xl border-black border-2;
+  }
+  .btn-white {
+    @apply text-black bg-white py-[12px] px-[22px]  rounded-xl border-black border-2;
+  }
+  .btn:hover {
+    @apply text-white bg-black py-[12px] px-[22px]  rounded-xl border-white border-2 duration-500 ease-in-out;
+  }
 
-img{
-  @apply object-contain
-}
+  img {
+    @apply object-contain  ; 
+  }
 }
