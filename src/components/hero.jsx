@@ -18,9 +18,9 @@ const [toggle, settoggle] = useState(false);
    <div className='xl:bg-hero  bg-opacity-20 bg-blend-darken bg-[#7BCFE9] bg-hero-mobile bg-cover max-sm:bg-center bg-no-repeat w-screen h-screen '>
       
       {/* Navbar section */}
-      <div className='container m-auto hidden sm:block '>
+     
       {/* desktop logo, link and button */}
-      
+      <div className='container m-auto hidden lg:block '> 
       <div className=" flex-wrap flex items-center justify-between  ">
         <div>
           <img src={logo} className='w-24'/>
@@ -42,12 +42,12 @@ const [toggle, settoggle] = useState(false);
 
 
 {/* mobile */}
-     <div className="sm:hidden container justify-between inline-flex items-center justify-items-center text-center ">
+     <div className="lg:hidden  w-full relative  justify-between flex container  text-center ">
        <div>
           <img src={logo} className='w-16'/>
         </div>
         <div
-          className=" z-50 relative size-7 dark:text-slate-200 text-black"
+          className=" z-50 absolute right-6 size-7  text-white "
           onClick={() => settoggle((prev) => !prev)}
         >
           {toggle ? (
@@ -92,16 +92,16 @@ const [toggle, settoggle] = useState(false);
               onDoubleClick={() => settoggle(false)}
             />
             <div
-              className={` sidebar justify-start py-28 flex-col flex bg-black fixed top-0 right-0  min-w-[200px]  h-full ring-2 ring-gray-600 dark:ring-gray-400  m-0 max-w-[500px] z-40 `}
+              className={` sidebar justify-start py-28 px-12 flex-col flex bg-black fixed top-0 right-0  min-w-[200px]  h-full ring-2 ring-yellow  m-0 max-w-[500px] z-40 `}
             >
               {navLink.map((nav, index) => (
                 <ul
-                  className={`flex-col `}
+                  className
                   onClick={() => settoggle((prev) => !prev)}
                 >
                   <li
                     key={nav.id}
-                    className={`font-normal cursor-pointer dark:hover:text-darkpurple hover:text-purple ${
+                    className={` cursor-pointer ${
                       index === navLink.length - 1 ? "mb-5" : "mb-5"
                     } list-none  justify-end  sm:flex 
               `}
@@ -110,7 +110,7 @@ const [toggle, settoggle] = useState(false);
                   </li>
                 </ul>
               ))}
-            </div>{" "}
+            </div>
           </div>
         )}
       </div>
@@ -118,11 +118,11 @@ const [toggle, settoggle] = useState(false);
 
 
     {/* hero section */}
-      <div className='container m-auto max-sm:flex flex-col   items-start'>
+      <div className='container   max-sm:flex flex-col   items-start'>
         <div >
         {/* headline and subhead */}
         <h1 className="sm:mt-[7%] lg:w-[720px]  mt-[15%]">
-          Equipping <span className="yellow">Nigerian youths </span>to become builders of 
+          Equipping <span className="yellow">Nigerian youths </span>to <span className='font-boska'>become builders</span> of
           the <span className="yellow">life they desire</span>
         </h1>
         <p className="mt-sm opacity-90 lg:w-[600px]">

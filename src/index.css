@@ -5,8 +5,7 @@
 body {
   margin: 0 auto;
 
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Satoshi", "Boska";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
@@ -15,11 +14,36 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Regular.woff") format("woff"),
+  url("./assets/fonts/Satoshi-Regular.woff2") format("woff2")
+    url("./assets/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Bold.woff") format("woff"),
+  url("./assets/fonts/Satoshi-Bold.woff2") format("woff2")
+    url("./assets/fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Boska";
+  src: url("./assets/fonts/Boska-MediumItalic.woff") format("woff"),
+  url("./assets/fonts/Boska-MediumItalic.woff2") format("woff2"),
+  url("./assets/fonts/Boska-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
 @layer base {
   /* utility classes */
 
   .container {
-    @apply pt-[30px] sm:px-[50px] px-[24px] m-auto;
+    @apply pt-[30px] sm:px-[50px] px-[24px] mx-auto ;
   }
 
   .yellow {

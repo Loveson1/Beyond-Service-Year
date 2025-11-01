@@ -2,7 +2,7 @@ export default function Story() {
   return (
     <div className=" flex flex-col items-center justify-center  bg-blend-darken bg-black/60 bg-story bg-cover max-sm:bg-center bg-no-repeat w-screen ">
       {/* hero section */}
-      <div className="container  mx-auto max-sm:flex flex-col max-sm:items-start my-lg">
+      <div className="container  mx-auto max-lg:flex flex-col max-sm:items-start my-lg">
         {/* headline and subhead */}
         <h1 className=" text-center ">Our Story</h1>
         <div className="flex sm:justify-center sm:items-start max-sm:flex-col gap-16 mt-lg opacity-90">
