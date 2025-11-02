@@ -28,7 +28,7 @@ export default function Why() {
             </div>
           </div>
           {/* second card */}
-          <div className="  card-img bg-hero-mobile bg-black/10 bg-blend-darken flex-1">
+          <div className="  card-img bg-why3 bg-center bg-black/10 bg-blend-darken flex-1">
             <div className="flex flex-col ">
               <p className=" 2xl:mb-[90%] mb-[100%] lg:mb-lg xl:mb-[120%] max-w-[350px]">
                 BSY exists so you don’t have to walk this journey alone.

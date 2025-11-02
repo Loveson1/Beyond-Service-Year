@@ -15,7 +15,7 @@ const [toggle, settoggle] = useState(false);
 
 
   return (
-   <div className='xl:bg-hero  bg-opacity-20 bg-blend-darken bg-[#7BCFE9] bg-hero-mobile bg-cover max-sm:bg-center bg-no-repeat w-screen h-screen '>
+   <div className='xl:bg-hero md:bg-hero-tab bg-opacity-20 bg-blend-darken bg-[#7BCFE9] max-sm:bg-hero-mobile  bg-cover max-sm:bg-center bg-no-repeat w-screen h-screen max-sm:h-[900px] '>
       
       {/* Navbar section */}
      

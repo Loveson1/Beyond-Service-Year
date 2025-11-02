@@ -6,39 +6,29 @@ export default function Faq() {
   //   faq content
   const Faq = [
     {
-      title: " What kind of product can i shop for on Sefrel Shop?",
+      title: " What makes BSY different?",
       content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
+        "BSY isn't just another program. We're a community of young Nigerians helping each other build the skills, confidence, and direction needed to land better jobs and create sustainable careers. Once you join the BSY Army, we walk with you through every step with real guidance and experiences that lead to real results.",
     },
     {
-      title: " Are the products original and of good quality?",
+      title: " What kind of support will I get in the community?",
       content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
+        "Growth is easier when you're not alone. Inside BSY, you'll find people who check in on you, share opportunities, and keep you accountable. It's a place to learn, grow, and feel seen because we rise better together.",
     },
     {
-      title: " How do I place an order?",
+      title: " Will I get access to resources and tools?",
       content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
+        "Yes. BSY Armies get access to webinars, internship opportunities, community-led sessions, and other resources made possible by people who believe in this mission. You'll find what you need to keep growing.",
     },
     {
-      title: " Can I search for vendors near me?",
+      title: "Is BSY right for me?",
       content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
+        "If you're a young Nigerian ready to level up your career but unsure where to start, BSY is for you. Whether you're a student, recent graduate, or young professional looking for better opportunities, you'll find your people here.",
     },
     {
-      title: " What payment method do you accept?",
+      title: " Do I need experience to join?",
       content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
-    },
-    {
-      title: "Can I return a product?",
-      content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
-    },
-    {
-      title: " Why should I shop Made - in - Nigeria?",
-      content:
-        "Only authentically Made-in-Nigeria products, from fashion and skincare to food, crafts, and more",
+        "Not at all. BSY is built for people at different stages. Whether you're a student just starting out, switching careers, or still searching for your first real opportunity, you'll find resources and support that meet you where you are.",
     },
   ];
 
@@ -49,51 +39,41 @@ export default function Faq() {
 
   return (
     <div className=" bg-gradient-to-b from-blue to-black">
-    <div className=" container ">
-      {/* faq head */}
-      <h1 className="text-center pt-10 mb-sm">
-        Frequently asked questions
-      </h1>
-      <p className="text-center pb-20">
-        Can’t find the answer here? Check out our Help Center.
-      </p>
-      {/* faq content */}
-      <div className="flex flex-col justify-center gap-6 ">
-        {Faq.map((f, index) => (
-          <div
-            key={index}
-            className="border-b border-blue border-opacity-40 transition "
-          >
-            <div className="flex justify-between gap-20 ">
-              <button onClick={() => toggle(index)} className="text-left">
-                <p className="font-medium mb-6  ">{f.title}</p>
-              </button>
-              <button
-                onClick={() => toggle(index)}
-                className="size-6 object-contain text-white"
-              >
-                {activeIndex === index ? "-" : "+"}
-              </button>
-            </div>
-            {/* accordion display for laptop */}
+      <div className=" container ">
+        {/* faq head */}
+        <h1 className="text-center pt-10 mb-sm">Frequently asked questions</h1>
+        <p className="text-center pb-20">
+          Can’t find the answer here? Check out our Help Center.
+        </p>
+        {/* faq content */}
+        <div className="flex flex-col justify-center gap-6 ">
+          {Faq.map((f, index) => (
             <div
-              className={`transition-all duration-500 ease-in-out hidden xl:block  ${
-                activeIndex === index
-                  ? "max-h-40 opacity-100"
-                  : "max-h-0 opacity-0"
-              }`}
+              key={index}
+              className="border-b border-blue border-opacity-40 transition "
             >
-              <p className="mb-6 ">{f.content}</p>
-            </div>
-            {/* accordion display for mobile and tablet */}
-            {activeIndex === index && (
-              <div className=" hidden max-xl:block">
-                <p className="mb-6   ">{f.content}</p>
+              <div className="flex justify-between gap-20 ">
+                <button onClick={() => toggle(index)} className="text-left">
+                  <p className="font-medium mb-6  ">{f.title}</p>
+                </button>
+                <button
+                  onClick={() => toggle(index)}
+                  className="size-6 object-contain text-white"
+                >
+                  {activeIndex === index ? "-" : "+"}
+                </button>
               </div>
-            )}
-          </div>
-        ))}
+         
+              {/* accordion display for mobile and tablet laptop */}
+              {activeIndex === index && (
+                <div className=" block ">
+                  <p className="mb-6   ">{f.content}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </div></div>
+    </div>
   );
 }

@@ -2,10 +2,10 @@ export default function Story() {
   return (
     <div className=" flex flex-col items-center justify-center  bg-blend-darken bg-black/60 bg-story bg-cover max-sm:bg-center bg-no-repeat w-screen ">
       {/* hero section */}
-      <div className="container  mx-auto max-lg:flex flex-col max-sm:items-start my-lg">
+      <div className="container  mx-auto flex flex-col md:items-start lg:items-center my-lg">
         {/* headline and subhead */}
         <h1 className=" text-center ">Our Story</h1>
-        <div className="flex sm:justify-center sm:items-start max-sm:flex-col gap-16 mt-lg opacity-90">
+        <div className="flex sm:justify-center sm:items-start max-lg:flex-col gap-16 mt-lg opacity-90">
           <div>
              <h2 className="font-bold mb-sm yellow">In the beginning</h2>
             <p className="  lg:w-[520px] ">
@@ -31,7 +31,7 @@ export default function Story() {
             <p>Volunteers breaking grounds</p>
           </div>
         </div>
-        <div className="flex  gap-5 mt-lg max-sm:flex-col justify-center mb-lg">
+        <div className="flex  gap-5 mt-lg max-lg:flex-col md:flex-row justify-center mb-lg">
               <button className="btn-yellow btn"> Join the Movement</button>
               <button className="btn-white  btn"> Read our Story</button>
             </div>

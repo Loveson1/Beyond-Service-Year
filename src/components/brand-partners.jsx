@@ -11,6 +11,7 @@ export default function Brand() {
 
   return (
     <div className="text-blue-900 py-1  bg-white">
+      <h2 className="black font-bold my-sm text-center opacity-40">Our Partners</h2>
       {/* logo with animation */}
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-scroll w-max ">

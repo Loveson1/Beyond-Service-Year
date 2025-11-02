@@ -1,17 +1,18 @@
+import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import logo from "../assets/images/Full logo.png";
 export default function Footer() {
   return (
     <div className="bg-black container pt-48 pb-10">
       <div className="mb-sm">
-        <img src={logo} alt="logo" className="size-32" />
+        <img src={logo} alt="logo" className="size-32 max-sm:size-24" />
       </div>
       {/* footer links  */}
       <div className="flex gap-10 max-lg:flex-col lg:justify-between lg:items-center">
         <div className="card bg-white max-w-[400px]">
           <p className="black font-bold">Add impact to your box </p>
           <p className="black text-xs mt-1">
-            Say hello and get our emails to stay in touch. We
-            want to hear from you, lets grow together. 
+            Say hello and get our emails to stay in touch. We want to hear from
+            you, lets grow together.
           </p>
           <form className="flex flex-col">
             <input
@@ -47,7 +48,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-         <div className="space-y-2">
+        <div className="space-y-2">
           <p className="font-bold">Resources</p>
           <ul className="space-y-1">
             <li>
@@ -58,12 +59,49 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-         <div className="space-y-2">
+        <div className="space-y-2">
           <p className="font-bold">Contact</p>
           <ul className="space-y-1">
             <li>
-              <a href="#">Bsy@gmail.com</a>
+              <a href="#">bsyteamng@gmail.com</a>
             </li>
+            <li>
+              <a href="#">+234 813 291 4115</a>
+            </li>
+            <div className="flex gap-3">
+            <li>
+              <div >
+            <a
+              href="https://www.linkedin.com/company/beyond-service-year-bsy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className=" size-5" />
+            </a>
+          </div></li>
+           <li>
+              <div >
+            <a
+              href="https://www.instagram.com/bsynigeria/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+        
+              <FaInstagram className=" size-5"/>
+             
+            </a>
+          </div></li>
+           <li>
+              <div >
+            <a
+              href="https://x.com/BSYNigeria"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaXTwitter className=" size-5" />
+            
+            </a>
+          </div></li></div>
           </ul>
         </div>
       </div>
