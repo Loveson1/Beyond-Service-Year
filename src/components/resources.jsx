@@ -4,7 +4,7 @@ import image2 from "../assets/images/res3.webp";
 export default function Resources() {
   let data = [
     {
-      image: image,
+      image: image2,
       title: "How to own your space in the digital world",
       content:
         "This is a packed video that launch you into how  to prepare and groom yourself in the digital world",
@@ -21,7 +21,7 @@ export default function Resources() {
       link:"#"
     },
     {
-      image: image2,
+      image: image,
       title: "How to  use Linkedin to land mouth watering opportunities",
       content:
         "In just few steps learn how to turn your linkedin into a magnet for opportunities",
@@ -39,7 +39,7 @@ export default function Resources() {
         <div className="flex gap-5 my-xl max-lg:flex-col">
        { data.map((card, i)=>(
         <div key={i} className="card  ">
-          <img src={card.image} alt="image" className="rounded-t-[15px] w-full max-h-[180px] border-black border" />
+          <img src={card.image} loading="lazy" alt="image" className="rounded-t-[15px] w-full max-h-[180px] border-black border" />
          <a href={card.link} ><p className="my-sm hover:text-blue font-bold black max-w-[350px]">{card.title}</p></a> 
           <div className="flex gap-5 justify-between">
           <p className="black text-sm max-w-[350px]">{card.content}</p>

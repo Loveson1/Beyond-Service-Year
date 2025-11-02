@@ -1,10 +1,10 @@
 export default function Story() {
   return (
-    <div className=" flex flex-col items-center justify-center  bg-blend-darken bg-black/60 bg-story bg-cover max-sm:bg-center bg-no-repeat w-screen ">
+    <div className="  flex flex-col items-center justify-center  bg-blend-darken bg-black/60 bg-story bg-cover max-sm:bg-center bg-no-repeat w-screen ">
       {/* hero section */}
-      <div className="container  mx-auto flex flex-col md:items-start lg:items-center my-lg">
+      <div className="container  mx-auto flex flex-col md:items-start items-center my-lg">
         {/* headline and subhead */}
-        <h1 className=" text-center ">Our Story</h1>
+        <h1 >Our Story</h1>
         <div className="flex sm:justify-center sm:items-start max-lg:flex-col gap-16 mt-lg opacity-90">
           <div>
              <h2 className="font-bold mb-sm yellow">In the beginning</h2>

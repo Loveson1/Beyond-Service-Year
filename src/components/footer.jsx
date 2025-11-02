@@ -3,8 +3,8 @@ import logo from "../assets/images/Full logo.png";
 export default function Footer() {
   return (
     <div className="bg-black container pt-48 pb-10">
-      <div className="mb-sm">
-        <img src={logo} alt="logo" className="size-32 max-sm:size-24" />
+      <div className="mb-lg">
+        <img src={logo} alt="logo" className="w-32 max-sm:w-28" />
       </div>
       {/* footer links  */}
       <div className="flex gap-10 max-lg:flex-col lg:justify-between lg:items-center">
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
         <div className="space-y-2">
           <p className="font-bold">Contact</p>
-          <ul className="space-y-1">
+          <ul className="space-y-2">
             <li>
               <a href="#">bsyteamng@gmail.com</a>
             </li>
