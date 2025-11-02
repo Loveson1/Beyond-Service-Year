@@ -135,7 +135,7 @@ const [toggle, settoggle] = useState(false);
         </p>
         </div>
         {/* buttons */}
-        <div className="flex gap-5 mt-lg max-sm:flex-col  max-sm:opacity-80">
+        <div className="flex gap-5 mt-lg max-sm:flex-col">
           <button className="btn-yellow btn"> Join the Movement  </button>
           <button className="btn-white  btn"> Check our Resources</button>
         </div>
