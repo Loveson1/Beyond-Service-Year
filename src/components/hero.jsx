@@ -42,9 +42,9 @@ const [toggle, settoggle] = useState(false);
 
 
 {/* mobile */}
-     <div className="lg:hidden  w-full relative  justify-between flex container  text-center ">
+     <div className="lg:hidden  w-full relative  justify-between flex items-center container  text-center ">
        <div>
-          <img src={logo} className='w-16'/>
+          <img src={logo} className='w-20'/>
         </div>
         <div
           className=" z-50 absolute right-6 size-7  text-white "
