@@ -10,14 +10,14 @@ module.exports = {
       backgroundImage: {
         hero: "url('../src/assets/images/hero.webp')",
         "hero-mobile": "url('../src/assets/images/hero-mobile.webp')",
-         "hero-tab": "url('../src/assets/images/hero-tab.webp')",
-         "story": "url('../src/assets/images/story.webp')",
-             "why": "url('../src/assets/images/why.webp')",
-               "why2": "url('../src/assets/images/why2.webp')",
-                "why3": "url('../src/assets/images/why3.webp')",
-         
+        "hero-tab": "url('../src/assets/images/hero-tab.webp')",
+        story: "url('../src/assets/images/story.webp')",
+        why: "url('../src/assets/images/why.webp')",
+        why2: "url('../src/assets/images/why2.webp')",
+        why3: "url('../src/assets/images/why3.webp')",
+        resource: "url('../src/assets/images/resource.webp')",
       },
-       margin: {
+      margin: {
         xl: "80px",
         lg: "40px",
         sm: "20px",

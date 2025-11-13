@@ -1,4 +1,5 @@
 import logo from '../assets/images/Full logo.png';
+import { Link, NavLink } from "react-router-dom";
 import {  useState } from "react";
 
 export default function Hero() {
@@ -15,7 +16,7 @@ const [toggle, settoggle] = useState(false);
 
 
   return (
-   <div className='xl:bg-hero md:bg-hero-tab bg-opacity-20 bg-blend-darken bg-[#7BCFE9] max-sm:bg-hero-mobile  bg-cover max-sm:bg-center bg-no-repeat w-screen h-screen max-sm:h-[900px] '>
+   <div className='xl:bg-hero md:bg-hero-tab bg-opacity-20 bg-blend-darken bg-[#7BCFE9] max-sm:bg-hero-mobile  bg-cover max-sm:bg-center bg-no-repeat w-screen min-h-[100vh] max-sm:h-[1000px] '>
       
       {/* Navbar section */}
      
@@ -28,11 +29,15 @@ const [toggle, settoggle] = useState(false);
         
         <div className="flex items-center gap-[30px] flex-wrap">
           {navLink.map((link) => (
-            <ul>
+            <NavLink   key={link.id}
+          to={`/${link.id}`} // 👈 This matches your route
+          className={({ isActive }) =>
+            isActive ? "text-blue-600 font-bold" : "text-gray-800"
+          }>
               <li className="text-black" key={link.id} >
                <a href={`#${link.id}`}> {link.title}</a>
               </li>
-            </ul>
+            </NavLink>
           ))}
           <button className="btn-yellow btn">Join the movement</button>
         </div>
@@ -135,7 +140,7 @@ const [toggle, settoggle] = useState(false);
         </p>
         </div>
         {/* buttons */}
-        <div className="flex gap-5 mt-lg max-sm:flex-col">
+        <div className="flex gap-5 mt-lg pb-[100px]  max-sm:flex-col">
           <button className="btn-yellow btn"> Join the Movement  </button>
           <button className="btn-white  btn"> Check our Resources</button>
         </div>
