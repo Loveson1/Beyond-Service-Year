@@ -1,14 +1,18 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./layout";
-import LandingPage from "./webpages/landing-page";
-import ResourcePage from "./webpages/resources-page";
+import React from "react";
+import ScrollToTop from "./components/scroll-to-top";
 // import AboutPage from "./webpages/AboutPage";
 // import ContactPage from "./webpages/ContactPage";
 // import PartnershipPage from "./webpages/PartnershipPage";
 
+const LandingPage  = React.lazy(()=> import("./webpages/landing-page"));
+const ResourcePage = React.lazy(()=> import("./webpages/resources-page"));
+
 function App() {
   return (
+    <React.Suspense fallback={<div className="flex justify-center items-center font-bold text-blue h-screen">Loading...</div>}>
+    <ScrollToTop/>
     <Routes>
       {/* Layout wrapper */}
       <Route path="/" element={<Layout />}>
@@ -20,6 +24,7 @@ function App() {
         {/* <Route path="partnership" element={<PartnershipPage />} /> */}
       </Route>
     </Routes>
+    </React.Suspense>
   );
 }
 

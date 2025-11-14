@@ -2,7 +2,7 @@ import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import logo from "../assets/images/Full logo.png";
 export default function Footer() {
   return (
-    <div className="bg-black container pt-48 pb-10">
+    <div className="bg-black container pt-[80px] pb-10 ">
       <div className="mb-lg">
         <img src={logo} alt="logo" className="w-32 max-sm:w-28" />
       </div>

@@ -23,7 +23,6 @@ function LandingPage() {
       <Resources />
       <Impact />
       <Faq />
-      <Footer />
     </div>
   );
 }

@@ -99,21 +99,25 @@ const [toggle, settoggle] = useState(false);
             <div
               className={` sidebar justify-start py-28 px-12 flex-col flex bg-black fixed top-0 right-0  min-w-[200px]  h-full ring-2 ring-yellow  m-0 max-w-[500px] z-40 `}
             >
-              {navLink.map((nav, index) => (
-                <ul
-                  className
-                  onClick={() => settoggle((prev) => !prev)}
+              {navLink.map((link, index) => (
+                <NavLink
+                  key={link.id}
+                  to={`/${link.id}`} // 👈 This matches your route
+                  className={({ isActive }) =>
+                    isActive ? "font-bold" : ""
+                  }
                 >
-                  <li
-                    key={nav.id}
-                    className={` cursor-pointer ${
-                      index === navLink.length - 1 ? "mb-5" : "mb-5"
-                    } list-none  justify-end  sm:flex 
+                  <ul className onClick={() => settoggle((prev) => !prev)}>
+                    <li
+                      key={link.id}
+                      className={` cursor-pointer ${
+                        index === navLink.length - 1 ? "mb-5" : "mb-5"
+                      } list-none  justify-end  sm:flex 
               `}
-                  >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                </ul>
+                    >
+                      <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
+                  </ul></NavLink>
               ))}
             </div>
           </div>
