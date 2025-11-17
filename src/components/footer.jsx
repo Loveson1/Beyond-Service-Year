@@ -1,5 +1,9 @@
 import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import logo from "../assets/images/Full logo.png";
+import { Link } from "react-router-dom";
+
+
+
 export default function Footer() {
   return (
     <div className="bg-black container pt-[80px] pb-10 ">
@@ -10,20 +14,21 @@ export default function Footer() {
       <div className="flex gap-10 max-lg:flex-col lg:justify-between lg:items-center">
         <div className="card bg-white max-w-[400px]">
           <p className="black font-bold">Add impact to your box </p>
-          <p className="black text-xs mt-1">
-            Say hello and get our emails to stay in touch. We want to hear from
+          <p className="black text-xs mt-1 max-w-[300px] opacity-70">
+            Say hello and get our emails to stay in touch. 
+            We want to hear from
             you, lets grow together.
           </p>
           <form className="flex flex-col">
             <input
-              className="my-sm border-gray-300 border-[1px] rounded-[9px] p-2 "
+              className="footer-form"
               placeholder="Enter your full name"
               type="text"
               minLength={5}
               required
             />
             <input
-              className="mb-sm border-gray-300 border-[1px] rounded-[9px] p-2 "
+              className="footer-form"
               placeholder="Enter your email"
               type="email"
               minLength={5}
@@ -52,10 +57,10 @@ export default function Footer() {
           <p className="font-bold">Resources</p>
           <ul className="space-y-1">
             <li>
-              <a href="#">Blog</a>
+             <Link to ="../resource">Blog</Link>
             </li>
             <li>
-              <a href="#">Check Our Resources</a>
+              <Link to ="../resource">Check Our Resources</Link>
             </li>
           </ul>
         </div>
@@ -63,10 +68,10 @@ export default function Footer() {
           <p className="font-bold">Contact</p>
           <ul className="space-y-2">
             <li>
-              <a href="#">bsyteamng@gmail.com</a>
+              <a href="mailto:bsyteamng@gmail.com">bsyteamng@gmail.com</a>
             </li>
             <li>
-              <a href="#">+234 813 291 4115</a>
+              <a href="tel:+2348132914115">+234 813 291 4115</a> 
             </li>
             <div className="flex gap-3">
             <li>

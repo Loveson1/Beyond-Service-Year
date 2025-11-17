@@ -1,190 +1,163 @@
-import logo from "../assets/images/Full logo.png";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FaXTwitter, FaFacebook, FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import image from "../assets/images/res1.webp";
 import image1 from "../assets/images/res2.webp";
 import image2 from "../assets/images/res3.webp";
 
 let data = [
   {
-    image: image2,
-    title: "Own your space in the digital world",
+     title: "BSY2025 WEBINAR Day 1 – Digital Positioning for Remote Work",
     content:
-      "This is a packed video that launch you into how  to prepare and groom yourself in the digital world",
+      "This webinar featured Ekwutosi Cynthia Okeh (Digital Witch founder) and Alice Joshua (Remote Work Padi founder), who shared their journeys from traditional careers to earning in foreign currency remotely, covering essential topics like skill identification, digital positioning strategies, and practical steps for Nigerian graduates and corp members to secure remote opportunities.",
     time: "2hrs",
-    link: "#",
+    link:"https://www.youtube.com/embed/r9acT6Hww64",
   },
   {
-    image: image1,
-    title: "How to craft a selling CV",
+    title: "BSY2025 Day 2 – Client Acquisition & Landing Freelance Jobs",
     content:
-      "This is a caurosel that launch you into how to create CV that helps you sell yourself",
+      "This webinar featured Messiah Ekaette (top-rated Upwork freelancer and client acquisition coach) and Winner Bamgboye(IT specialist and creative professional), who shared proven strategies for landing international freelance jobs, including the overdo strategy that helped Nigerian freelancers secure over $600-paying jobs, plus practical tips on portfolio building, remote work tools, and positioning yourself for global opportunities.",
 
-    time: "10mins",
-    info: "Click icons to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    time: "2hrs ",
+    link:" https://www.youtube.com/embed/rMxff9wFNWY"
   },
   {
-    image: image,
-    title: "LinkedIn made simple for students",
+    title: "BSY2025 Day 3 – Personal Branding & LinkedIn Growth Strategies",
     content:
-      "In just few steps learn how to turn your linkedin into a magnet for opportunities",
+      "This webinar featured Okechi ogwuma (personal branding strategist) and Rejoice (Co-founder of Beyond Service Year), who revealed how to build influential personal brands that attract international clients, including profile optimization strategies, content approaches that generate trust over sales pitches, and the exact engagement tactics that helped them land clients within 5 months on LinkedIn without sending cold DMs or submitting CVs.",
 
-    time: "15mins",
-    info: "Click icon to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    time: "2hrs",
+    link: "https://www.youtube.com/embed/nDK_qSkVdc8",
   },
 ];
 
 let allData = [
   {
     image: image1,
-    title: "How to craft a selling CV",
+    title: "How to brand yourself online",
     content:
-      "This is a caurosel that launch you into how to create CV that helps you sell yourself",
+      " Learn how to position yourself so clients find you, not the other way around. Build a profile that speaks to the right people, show up where it matters, and let your personal brand work while you sleep.",
 
     time: "10mins",
     info: "Click icons to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    glink:"https://www.instagram.com/p/DOInD-DiYOk/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==",
+    xlink: "https://x.com/BSYNigeria/status/1963165814221320678?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_bsy2025-beyondserviceyear-personalbranding-activity-7368932847157506049-6yCz?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
     category: "Career Development",
   },
   {
     image: image,
     title: "LinkedIn made simple for students",
     content:
-      "In just few steps learn how to turn your linkedin into a magnet for opportunities",
+      "Growing on LinkedIn doesn't require hours every day. Learn how to show up consistently even with a busy NYC or school schedule and build a presence that attracts opportunities while you're offline.",
 
-    time: "15mins",
-    info: "Click icon to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
-    category: "Personal Development",
-  },
-  {
-    image: image1,
-    title: "How to craft a selling CV",
-    content:
-      "This is a caurosel that launch you into how to create CV that helps you sell yourself",
-
-    time: "10mins",
-    info: "Click icons to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
-    category: "Personal Development",
-  },
-  {
-    image: image,
-    title: "LinkedIn made simple for students",
-    content:
-      "In just few steps learn how to turn your linkedin into a magnet for opportunities",
-
-    time: "15mins",
-    info: "Click icon to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    time: "8mins",
+    glink: "https://www.instagram.com/p/DOasPZRDg72/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink:"https://x.com/BSYNigeria/status/1965711619629228187?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_bsy-vs-linkedin-activity-7371472355035922432-vKeL?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
     category: "Career Development",
   },
   {
     image: image1,
-    title: "How to craft a selling CV",
+    title: "5 free platforms to learn skills this weekend",
     content:
-      "This is a caurosel that launch you into how to create CV that helps you sell yourself",
+      " You don't need expensive courses to get started. Discover five free platforms where you can learn in-demand skills this weekend, from tech to design to virtual assistance. Start building your portfolio today without spending a dime.",
 
-    time: "10mins",
-    info: "Click icons to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
-    category: "Personal Development",
-  },
-  {
-    image: image,
-    title: "LinkedIn made simple for students",
-    content:
-      "In just few steps learn how to turn your linkedin into a magnet for opportunities",
-
-    time: "15mins",
-    info: "Click icon to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    time: "12mins",
+    glink: "https://www.instagram.com/p/DOsfdSDCKSQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: "https://x.com/BSYNigeria/status/1968221833406320882?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_from-zero-experience-to-a-tech-carrier-all-activity-7373977873352814593-_pfB?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
     category: "Career Development",
   },
   {
+    image: image,
+    title: "Mindset shift to change how you approach opportunities",
+    content:
+      " Stop waiting for perfect conditions or permission to start. Learn how to see yourself as a solution provider instead of a job seeker, build audacity that opens doors, and position yourself for opportunities you think are out of your league.",
+
+    time: "10mins",
+    glink: "https://www.instagram.com/reel/DO-lPR9iAOk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: " https://x.com/BSYNigeria/status/1970759746132058184?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_bsy-bsy2025-beyondserviceyear-activity-7376510344959217664-1Q61?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
+    category: "Personal Development",
+  },
+  {
     image: image1,
     title: "How to craft a selling CV",
     content:
-      "This is a caurosel that launch you into how to create CV that helps you sell yourself",
+      " Your CV might be costing you opportunities. Learn quick fixes that make recruiters stop scrolling, how to highlight results over responsibilities, and simple formatting tweaks that get your application noticed by recruiters and pass ATS screening.",
 
-    time: "10mins",
-    info: "Click icons to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
-    category: "Personal Development",
+    time: "7mins",
+    glink: "https://www.instagram.com/p/DPQgtXdCP4i/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: "https://x.com/BSYNigeria/status/1973307223607746619?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_quick-cv-check-ugcPost-7379049111964041216-4UZt?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
+    category: "Career Development",
   },
   {
     image: image,
-    title: "LinkedIn made simple for students",
+    title: "One simple trick to land a mentor",
     content:
-      "In just few steps learn how to turn your linkedin into a magnet for opportunities",
+      "Adeola shares the exact approach that landed him his mentor without months of cold pitching. Discover how he built genuine connection, provided value first, and turned a simple interaction into a mentorship that’s changing his career journey.",
 
-    time: "15mins",
+    time: "7mins",
     info: "Click icon to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    glink: "https://www.instagram.com/p/DPih7cDiFRc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: "https://x.com/BSYNigeria/status/1975866548125384777?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_bsy-mentorship-activity-7381584167127527424-h1kU?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
     category: "Personal Development",
   },
   {
     image: image1,
-    title: "How to craft a selling CV",
+    title: "Turn your NYSC year into an opportunity",
     content:
-      "This is a caurosel that launch you into how to create CV that helps you sell yourself",
+      "Your service year doesn't have to be wasted time. Learn how to leverage your posting, document your skills, build a portfolio during camp, and position yourself for opportunities before your allowee runs out.",
+
+    time: "8mins",
+    glink: "https://www.instagram.com/p/DP0kQ_hCFyN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: " https://x.com/BSYNigeria/status/1978376846128320850?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_bsy-beyondserviceyear-bsypulseproject-activity-7384121426733113344-czQ-?utm_medium=ios_app&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o&utm_source=social_share_send&utm_campaign=copy_link",
+    category: "Career Development",
+  },
+  {
+    image: image,
+    title: "3 powerful lessons from Tony Elumelu every youth should learn",
+    content:
+      "We broke down one of Tony Elumelu's most powerful quotes to reveal three game-changing lessons about entrepreneurship, resilience, and creating your own opportunities. These principles shaped his empire and can change your approach to success.",
 
     time: "10mins",
-    info: "Click icons to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+    glink: "https://www.instagram.com/p/DQGkdqniHp-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: " https://x.com/BSYNigeria/status/1980931937893228892?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_tony-elumelu-tips-to-youths-activity-7386658590045982720-ohNW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o",
+    category: "Personal Development",
+  },
+  {
+    image: image1,
+    title: "The cold DM formula that actually gets replies",
+    content:
+      "Stop sending pitches that only get ignored. Learn how to write cold pitches that decision-makers actually respond to.",
+
+    time: "10mins",
+    glink: "https://www.instagram.com/p/DQYq87HiMYM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    xlink: "https://x.com/BSYNigeria/status/1983474180638302209?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_tell-me-about-yourself-activity-7391730702825943040-c__r?utm_source=share&utm_medium=member_desktop&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o",
     category: "Career Development",
   },
   {
     image: image,
     title: "LinkedIn made simple for students",
     content:
-      "In just few steps learn how to turn your linkedin into a magnet for opportunities",
-
-    time: "15mins",
-    info: "Click icon to read on your favourite handle",
-    fblink: <FaFacebook />,
-    xlink: <FaXTwitter />,
-    inlink: <FaLinkedinIn />,
+      "Tell me about yourself seems simple, but trips up most people. Learn the framework that keeps your answer focused, how to connect your story to what they need, and what recruiters actually want to hear in those first 60 seconds.",
+    time: "10mins",
+    glink:"https://www.instagram.com/p/DQqnM_TCGvi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" ,
+    xlink: " https://x.com/BSYNigeria/status/1985990451699073246?s=20",
+    inlink: "https://www.linkedin.com/posts/beyond-service-year-bsy_tell-me-about-yourself-activity-7391730702825943040-c__r?utm_source=share&utm_medium=member_desktop&rcm=ACoAADEeWYkB9h-W-LnBM0SNByooFEkEPW0bK7o",
     category: "Career Development",
   },
 ];
 
-let navLink = [
-  { id: "home", title: "Home" },
-  { id: "about", title: "About" },
-  { id: "resource", title: "Resources" },
-  { id: "contact", title: "Contact" },
-  { id: "partnership", title: "Partnership" },
-];
+
 
 export default function ResourcePage() {
 
-  const [toggle, settoggle] = useState(false);
   const [activefilter, setactivefilter] = useState("All");
   const [visibleCards, setVisibleCards] = useState(3);
 
@@ -197,117 +170,14 @@ export default function ResourcePage() {
   return (
     <div className="bg-[#efefef]">
       <div className=" bg-opacity-50 bg-blend-darken bg-black bg-resource bg-cover max-sm:bg-cover bg-no-repeat w-screen min-h-[100vh]  ">
-        {/* Navbar section */}
-
-        {/* desktop logo, link and button */}
-        <div className="container m-auto hidden lg:block ">
-          <div className=" flex-wrap flex items-center justify-between  ">
-            <div>
-              <img src={logo} className="w-24" />
-            </div>
-
-            <div className="flex items-center gap-[30px] flex-wrap">
-              {navLink.map((link) => (
-                <NavLink
-                  key={link.id}
-                  to={`/${link.id}`} // 👈 This matches your route
-                  className={({ isActive }) => (isActive ? "font-bold" : "")}
-                >
-                  <li className="text-black" key={link.id}>
-                    <a href={`#${link.id}`}> {link.title}</a>
-                  </li>
-                </NavLink>
-              ))}
-              <button className="btn-yellow btn">Join the movement</button>
-            </div>
-          </div>
-        </div>
-
-        {/* mobile */}
-        <div className="lg:hidden  w-full relative  justify-between flex items-center container  text-center ">
-          <div>
-            <img src={logo} className="w-20" />
-          </div>
-          <div
-            className=" z-50 absolute right-6 size-7  text-white "
-            onClick={() => settoggle((prev) => !prev)}
-          >
-            {toggle ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-7 mt-[-3px]"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-7 mt-[-3px]"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-                />
-              </svg>
-            )}
-          </div>
-
-          {toggle && (
-            <div>
-              <div
-                className="fixed inset-0 bg-black/30 backdrop-blur-sm z-30"
-                onClick={() => settoggle(false)}
-                onWheel={() => settoggle(false)}
-                onDoubleClick={() => settoggle(false)}
-              />
-              <div
-                className={` sidebar justify-start py-28 px-12 flex-col flex bg-black fixed top-0 right-0  min-w-[200px]  h-full ring-2 ring-yellow  m-0 max-w-[500px] z-40 `}
-              >
-                {navLink.map((link, index) => (
-                  <NavLink
-                    key={link.id}
-                    to={`/${link.id}`} // 👈 This matches your route
-                    className={({ isActive }) => (isActive ? "font-bold" : "")}
-                  >
-                    <ul className onClick={() => settoggle((prev) => !prev)}>
-                      <li
-                        key={link.id}
-                        className={` cursor-pointer ${
-                          index === navLink.length - 1 ? "mb-5" : "mb-5"
-                        } list-none  justify-end  sm:flex 
-              `}
-                      >
-                        <a href={`#${link.id}`}>{link.title}</a>
-                      </li>
-                    </ul>
-                  </NavLink>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-
         {/* Resource section */}
-        <div className="container min-h-[70vh] flex  max-sm:flex flex-col justify-center  items-center">
+        <div className="container min-h-[100vh] flex  max-sm:flex flex-col justify-center  items-center">
           <div className="">
             {/* headline and subhead */}
             <h1 className="sm:mt-[7%] lg:w-[720px] mx-auto text-center mt-[15%]">
               Carefully Crafted <span className="yellow"> Resources </span>{" "}
               <span className="font-boska"> just for </span>
-              <span className="yellow">you</span>
+              <span className="yellow">You</span>
             </h1>
             <p className="mt-sm opacity-90 mx-auto text-center lg:w-[600px]">
               Everything you need to grow your career in one place.
@@ -316,73 +186,48 @@ export default function ResourcePage() {
         </div>
       </div>
       <main className="bg-[#efefef] ">
+        {/* Resource Section */}
         <div className="container ">
-          <h2 className="text-center black mt-10">Featured Resource</h2>
-          <p className="text-center text-xs mt-[10px] black">Your Growth starts here </p>
-          {/* resource card */}
-          <div className="flex gap-5 my-xl max-lg:flex-col ">
+          <h2 className="text-center black mt-10">Start with these</h2>
+          <p className="text-center text-xs mt-[10px] black">
+            Your Growth starts here{" "}
+          </p>
+          
+             {/* Youtube Embedded Videos */}
+          <div className="flex gap-5 my-xl max-lg:flex-col justify-center  ">
             {data.map((card, i) => (
-              <div key={i} className="card-blue hover:-translate-y-2 hover:shadow-2xl shadow-md duration-500">
-                <img
-                  src={card.image}
-                  loading="lazy"
-                  alt="image"
-                  className="rounded-t-[15px] w-full max-h-[180px] border-black border"
-                />
+              <div
+                key={i}
+                className="card-blue hover:-translate-y-2 hover:shadow-xl shadow-md duration-500 "
+              >
+                <div>
+                    <iframe
+                     className="rounded-[15px] w-full"
+                      src={card.link}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title="Embedded YouTube Video"
+                      loading="lazy"
+                    ></iframe>
+                  </div>
                 <div className="px-5 py-5 ">
-                  <a href={card.inlink}>
+                <div className="flex  gap-5 justify-between">  <a href={card.link}>
                     <p className="mb-sm hover:text-white font-bold white opacity-90 max-w-[350px]">
                       {card.title}
                     </p>
                   </a>
-                  <div className="flex gap-5 justify-between">
-                    <p className="opacity-100 black text-sm max-w-[350px]">
-                      {card.content}
-                    </p>
-                    <div className>
+                  <div className>
                       <p className="black px-2 py-1 w-14 text-center text-xs bg-white rounded-2xl">
                         {card.time}
                       </p>
-                    </div>
+                    </div></div>
+                  <div className="flex gap-5 justify-between">
+                    <p className="opacity-100 black text-xs max-w-[350px]">
+                      {card.content}
+                    </p>
+                    
                   </div>
                   <div className="flex justify-between items-center gap-8 mt-sm">
-                    <p className="text-[10px] white opacity-70 m-0 leading-[1.2]">
-                      {card.info}
-                    </p>
-                    <div className="flex gap-5 items-end justify-end ">
-                      <div>
-                        <a
-                          href="https://www.linkedin.com/company/beyond-service-year-bsy/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opacity-100 hover:text-white "
-                        >
-                          {card.inlink}
-                        </a>
-                      </div>
-
-                      <div>
-                        <a
-                          href="https://www.linkedin.com/company/beyond-service-year-bsy/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opacity-100 hover:text-white "
-                        >
-                          {card.xlink}
-                        </a>
-                      </div>
-
-                      <div>
-                        <a
-                          href="https://www.linkedin.com/company/beyond-service-year-bsy/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opacity-100 hover:text-white "
-                        >
-                          {card.fblink}
-                        </a>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -390,12 +235,15 @@ export default function ResourcePage() {
           </div>
         </div>
 
-        {/* Youtube Embedded Videos */}
-        <div></div>
+     
+     
         {/* All resource */}
 
         <div className="mt-lg  bg-yellow">
-          <h2 className="text-center black pb-[40px] pt-[80px]"> BSY knowledge playbooks</h2>
+          <h2 className="text-center black pb-[40px] pt-[80px]">
+            {" "}
+            BSY knowledge playbooks
+          </h2>
 
           {/* Category button */}
           <div className="flex gap-10 sm:justify-center px-6   items-center overflow-x-scroll ">
@@ -419,9 +267,12 @@ export default function ResourcePage() {
           {/* All resource  */}
           <div className="container">
             {/* resource card */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 py-[40px]  ">
+            <div className="max-lg:grid-cols-1 grid grid-cols-3 gap-5 py-[40px]  ">
               {visibleCardData.map((card, i) => (
-                <div key={i} className="card-blue hover:-translate-y-2 hover:shadow-2xl shadow-md duration-500">
+                <div
+                  key={i}
+                  className="card-blue hover:-translate-y-2 hover:shadow-xl shadow-md duration-500"
+                >
                   <img
                     src={card.image}
                     loading="lazy"
@@ -429,56 +280,57 @@ export default function ResourcePage() {
                     className="rounded-t-[15px] w-full max-h-[180px] border-black border"
                   />
                   <div className="px-5 py-5 ">
-                    <a href={card.inlink}>
+                    <div className="flex justify-between gap-5">
+              
                       <p className="mb-sm hover:text-white font-bold white opacity-90 max-w-[350px]">
                         {card.title}
                       </p>
-                    </a>
-                    <div className="flex gap-5 justify-between">
-                      <p className="opacity-100 black text-sm max-w-[350px]">
-                        {card.content}
-                      </p>
-                      <div className>
+                     <div className>
                         <p className="black px-2 py-1 w-14 text-center text-xs bg-white rounded-2xl">
                           {card.time}
                         </p>
                       </div>
                     </div>
-                    <div className="flex justify-between items-center gap-8 mt-sm">
-                      <p className="text-[10px] white opacity-70 m-0 leading-[1.2]">
-                        {card.info}
+                    <div className="flex gap-5 justify-between">
+                      <p className="opacity-100 black text-xs max-w-[350px]">
+                        {card.content}
                       </p>
-                      <div className="flex gap-5 items-end justify-end ">
+                    </div>
+                    <div className="flex justify-between items-center gap-8 mt-sm ">
+                      <p className="text-[10px] white opacity-70 m-0 leading-[1.2]">
+                       Click icon to read more on your favourite handle 
+                      </p>
+                      <div className="flex gap-6 items-end justify-end ">
                         <div>
                           <a
-                            href="https://www.linkedin.com/company/beyond-service-year-bsy/"
+                            href={card.inlink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:opacity-100 hover:text-white "
                           >
-                            {card.inlink}
+                           <FaLinkedinIn />
                           </a>
                         </div>
 
                         <div>
                           <a
-                            href="https://www.linkedin.com/company/beyond-service-year-bsy/"
+                            href={card.xlink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:opacity-100 hover:text-white "
                           >
-                            {card.xlink}
+                          <FaXTwitter />
                           </a>
                         </div>
 
                         <div>
                           <a
-                            href="https://www.linkedin.com/company/beyond-service-year-bsy/"
+                            href={card.glink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:opacity-100 hover:text-white "
                           >
-                            {card.fblink}
+                          <FaInstagram />
                           </a>
                         </div>
                       </div>
@@ -486,16 +338,19 @@ export default function ResourcePage() {
                   </div>
                 </div>
               ))}
-            </div>   
-             </div>
-      { visibleCards < filteredCard.length && (
-        <div className="flex justify-center pb-[40px]">
-          <button onClick={()=> setVisibleCards(prev => prev + 3)} className="btn-white  btn">Load More</button>
-        </div> )}
+            </div>
           </div>
-
-          
-    
+          {visibleCards < filteredCard.length && (
+            <div className="flex justify-center pb-[40px]">
+              <button
+                onClick={() => setVisibleCards((prev) => prev + 3)}
+                className="btn-white  btn"
+              >
+                Load More
+              </button>
+            </div>
+          )}
+        </div>
       </main>
     </div>
   );

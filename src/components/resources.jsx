@@ -21,7 +21,7 @@ export default function Resources() {
 
       time: "10mins",
       info: "Click icons to read on your favourite handle",
-      fblink: <FaFacebook />,
+      glink: <FaFacebook />,
       xlink: <FaXTwitter />,
       inlink: <FaLinkedinIn />,
     },
@@ -33,7 +33,7 @@ export default function Resources() {
 
       time: "15mins",
       info: "Click icon to read on your favourite handle",
-      fblink: <FaFacebook />,
+      glink: <FaFacebook />,
       xlink: <FaXTwitter />,
       inlink: <FaLinkedinIn />,
     },
@@ -98,7 +98,7 @@ export default function Resources() {
                     rel="noopener noreferrer"
                     className="hover:opacity-100 hover:text-white "
                   >
-                    {card.fblink}
+                    {card.glink}
                   </a>
                 </div>
               </div>

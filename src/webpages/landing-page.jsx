@@ -9,7 +9,6 @@ import {
   Resources,
   Impact,
   Faq,
-  Footer,
 } from "../components/index";
 
 function LandingPage() {

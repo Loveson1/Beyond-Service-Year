@@ -62,7 +62,7 @@ body {
     @apply rounded-[15px] bg-blue   border-none ;
   }
   .card-img {
-    @apply  rounded-[15px]  bg-blue bg-cover hover:scale-105 duration-500 ;
+    @apply  rounded-[15px]  bg-blue bg-cover hover:scale-105 duration-500 p-[24px] ;
   }
 
   .animate-scroll:hover {
@@ -114,6 +114,14 @@ body {
 
   ::-webkit-scrollbar{
    @apply hidden;
+   
   }
+.footer-form{
+  @apply my-sm border-gray-300 border-[1px] rounded-[9px] p-2 ;
+}
+
+.form{
+  @apply  border-gray-300 border-[1px] rounded-[9px] p-2 ;
+}
 }
 

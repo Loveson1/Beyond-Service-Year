@@ -3,11 +3,11 @@ import Layout from "./layout";
 import React from "react";
 import ScrollToTop from "./components/scroll-to-top";
 // import AboutPage from "./webpages/AboutPage";
-// import ContactPage from "./webpages/ContactPage";
 // import PartnershipPage from "./webpages/PartnershipPage";
 
 const LandingPage  = React.lazy(()=> import("./webpages/landing-page"));
 const ResourcePage = React.lazy(()=> import("./webpages/resources-page"));
+const ContactPage = React.lazy(()=> import("./webpages/contact"));
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="home" element={<LandingPage />} />
         {/* <Route path="about" element={<AboutPage />} /> */}
         <Route path="resource" element={<ResourcePage />} />
-        {/* <Route path="contact" element={<ContactPage />} /> */}
+        <Route path="contact" element={<ContactPage />} />
         {/* <Route path="partnership" element={<PartnershipPage />} /> */}
       </Route>
     </Routes>
