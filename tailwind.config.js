@@ -16,7 +16,9 @@ module.exports = {
         why2: "url('../src/assets/images/why2.webp')",
         why3: "url('../src/assets/images/why3.webp')",
         resource: "url('../src/assets/images/resource.webp')",
-         contact: "url('../src/assets/images/contact.webp')",
+        contact: "url('../src/assets/images/contact.webp')",
+        "mobile-about": "url('../src/assets/images/mobile-about.webp')",
+        "desktop-about": "url('../src/assets/images/desktop-about.webp')",
       },
       margin: {
         xl: "80px",

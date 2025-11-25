@@ -47,6 +47,9 @@ export default function Contact() {
           <input className="form" type="tel" placeholder="Phone Number" required min={10}/>
           <label htmlFor="message" className="mt-5">Message</label>
           <textarea className="form py-5" placeholder="Your message here" required></textarea>
+          <button type="submit" className=" btn-yellow mt-sm block w-full">
+              Send
+            </button>
         </form>
 
        

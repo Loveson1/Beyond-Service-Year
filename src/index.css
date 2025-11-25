@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-
+background-color: #efefef;
   overflow-x: hidden;
   padding: 0;
   background: black;
@@ -62,7 +62,7 @@ body {
     @apply rounded-[15px] bg-blue   border-none ;
   }
   .card-img {
-    @apply  rounded-[15px]  bg-blue bg-cover hover:scale-105 duration-500 p-[24px] ;
+    @apply  rounded-[15px]  bg-blue bg-cover hover:scale-[103%] duration-1000 p-[24px] ;
   }
 
   .animate-scroll:hover {
@@ -117,7 +117,7 @@ body {
    
   }
 .footer-form{
-  @apply my-sm border-gray-300 border-[1px] rounded-[9px] p-2 ;
+  @apply my-[10px] border-gray-300 border-[1px] rounded-[9px] p-2 ;
 }
 
 .form{

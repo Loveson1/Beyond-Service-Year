@@ -8,6 +8,7 @@ import ScrollToTop from "./components/scroll-to-top";
 const LandingPage  = React.lazy(()=> import("./webpages/landing-page"));
 const ResourcePage = React.lazy(()=> import("./webpages/resources-page"));
 const ContactPage = React.lazy(()=> import("./webpages/contact"));
+const AboutPage = React.lazy(()=> import("./webpages/about"));
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to="home" replace />} />
         <Route path="home" element={<LandingPage />} />
-        {/* <Route path="about" element={<AboutPage />} /> */}
+        <Route path="about" element={<AboutPage />} />
         <Route path="resource" element={<ResourcePage />} />
         <Route path="contact" element={<ContactPage />} />
         {/* <Route path="partnership" element={<PartnershipPage />} /> */}

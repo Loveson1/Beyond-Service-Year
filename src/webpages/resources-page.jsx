@@ -188,7 +188,7 @@ export default function ResourcePage() {
       <main className="bg-[#efefef] ">
         {/* Resource Section */}
         <div className="container ">
-          <h2 className="text-center black mt-10">Start with these</h2>
+          <h2 className="text-center black mt-10">Start With These</h2>
           <p className="text-center text-xs mt-[10px] black">
             Your Growth starts here{" "}
           </p>

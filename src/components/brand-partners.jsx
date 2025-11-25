@@ -10,10 +10,10 @@ export default function Brand() {
   const doubledLogos = [...logos, ...logos];
 
   return (
-    <div className="text-blue-900 py-1  bg-white">
-      <h2 className="black font-bold my-sm text-center opacity-40">Our Partners</h2>
+    <div className="text-blue-900 bg-gray-300   ">
+      <h2 className="black font-bold py-5 text-center opacity-40">Our Trusted Partners</h2>
       {/* logo with animation */}
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden bg-white">
         <div className="flex animate-scroll w-max ">
           {doubledLogos.map((logo, index) => (
             <div key={index} className="flex-shrink-0 px-28 max-sm:px-2">
