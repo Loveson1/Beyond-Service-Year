@@ -55,7 +55,7 @@ export default function Contact() {
        
         </div> 
         {/* Contact-info */}
-        <div className="bg-yellow pt-[30px] sm:p-[50px] p-[24px] mx-auto  rounded-t-[24px] flex gap-5 justify-center max-lg:flex-col">
+        <div className="container bg-yellow pt-[30px] sm:p-[50px] p-[24px] mx-auto  rounded-t-[24px] flex gap-5 justify-center max-lg:flex-col">
               <h2 className="black text-center mb-sm">Get in Touch</h2>
             <div className="flex flex-col items-center bg-opacity-20 bg-white rounded-[9px] justify-center px-7 py-5 gap-2 border border-black w-full">
                 <FaEnvelope />

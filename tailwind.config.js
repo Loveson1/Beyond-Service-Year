@@ -19,6 +19,7 @@ module.exports = {
         contact: "url('../src/assets/images/contact.webp')",
         "mobile-about": "url('../src/assets/images/mobile-about.webp')",
         "desktop-about": "url('../src/assets/images/desktop-about.webp')",
+         "partnership": "url('../src/assets/images/partner.webp')",
       },
       margin: {
         xl: "80px",

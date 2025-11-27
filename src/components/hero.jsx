@@ -19,7 +19,7 @@ export default function Hero() {
           supportive
         
           community to help you <span className="yellow">
-            <strong> turn your dreams into reality</strong>
+            <strong> turn your dreams into reality.</strong>
           </span>
         </p>
         </div>

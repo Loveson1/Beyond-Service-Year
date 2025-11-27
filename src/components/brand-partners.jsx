@@ -1,6 +1,6 @@
-import logo1 from "../assets/images/brandlogo (1).png";
-import logo2 from "../assets/images/brandlogo (2).png";
-import logo3 from "../assets/images/brandlogo (3).png";
+import logo1 from "../assets/images/brandlogo (1).webp";
+import logo2 from "../assets/images/brandlogo (2).webp";
+import logo3 from "../assets/images/brandlogo (3).webp";
 
 export default function Brand() {
   // array of logos

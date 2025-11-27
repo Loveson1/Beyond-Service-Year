@@ -1,5 +1,3 @@
-import vision from "../assets/images/vision.webp";
-import mission from "../assets/images/mission.webp";
 import { FaLinkedinIn } from "react-icons/fa6";
 import image1 from "../assets/images/Rejoice.jpg";
 import image2 from "../assets/images/Samuel.jpg";
@@ -56,7 +54,7 @@ const team = [
     name: "Adeola (Godson) Omomowo",
     image: image6,
     link: "https://www.linkedin.com/in/adeola-omomowo/",
-    title: "The Graphic design Lead",
+    title: "The Graphic Design Lead",
     alias: "Adeola",
   },
   {
@@ -70,12 +68,12 @@ const team = [
     name: "Deborah Idaboh",
     image: image8,
     link: "https://www.linkedin.com/in/deborah-idaboh-7147ab37a/",
-    title: "The Community Manager and logistics lead",
+    title: "The Community Manager and Logistics Lead",
     alias: "Deborah",
   },
 ];
 
-export default function Contact() {
+export default function About() {
   // Scroll control for the executives caurosel
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -123,7 +121,7 @@ export default function Contact() {
             </h1>
             <p className="mt-sm opacity-90 mx-auto text-center lg:w-[400px]">
               Story, story! Story. Once upon a time! Time, time. This is the
-              story of how BSY was born
+              story of how BSY was born...
             </p>
           </div>
         </div>
@@ -132,7 +130,7 @@ export default function Contact() {
       <main>
         {/* Story */}
         <div className="py-16 container">
-          <h2 className="black text-center mb-sm">Our Story</h2>
+          <h2 className="black text-center mb-[5px]">Our Story</h2>
           <p className="black text-center mb-xl mx-auto opacity-70">
             Here's how it all started, not with perfection but courage
           </p>
@@ -187,11 +185,6 @@ export default function Contact() {
                 fear but with excitement, knowing their next move is already
                 mapped out.
               </p>
-              <img
-                src={vision}
-                alt="vision-icon"
-                className="absolute opacity-25 max-w-[150px] top-[-50px] right-[-15px] "
-              />
             </div>
             <div className="card-blue max-w-lg p-[24px] space-y-5 relative">
               <h2 className="white">Our Bold Mission</h2>
@@ -204,27 +197,22 @@ export default function Contact() {
                 connections that open doors, and tangible opportunities that
                 change your career path.
               </p>
-              <img
-                src={mission}
-                alt="vision-icon"
-                className="absolute  max-w-[120px] opacity-25 top-[-30px] right-[-10px] "
-              />
             </div>
             <div className="card bg-white max-w-lg p-[24px] space-y-5 ">
               <h2 className="black">Our Core Values</h2>
-              <p className="black opacity-80 bg-green-100 px-4 text-green-700 rounded-full ">
+              <p className="black opacity-80 bg-green-100 px-4 text-green-900 rounded-full ">
                 Empowerment
               </p>
 
-              <p className="black opacity-80 bg-orange-100 px-4 text-orange-700 rounded-full ">
+              <p className="black opacity-80 bg-orange-100 px-4 text-orange-900 rounded-full ">
                 Community
               </p>
 
-              <p className="black opacity-80 bg-cyan-100 px-4 text-cyan-700 rounded-full ">
+              <p className="black opacity-80 bg-cyan-100 px-4 text-cyan-900 rounded-full ">
                 Growth & Excellence
               </p>
 
-              <p className="black opacity-80 bg-purple-100 px-4 text-purple-700 rounded-full ">
+              <p className="black opacity-80 bg-purple-100 px-4 text-purple-900 rounded-full ">
                 Accessibility
               </p>
             </div>
@@ -235,7 +223,7 @@ export default function Contact() {
             <h2 className="black text-center mt-xl mb-lg">
               Our Impact Till Date
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-lg ">
               <p className="black card bg-gray-100 text-sm opacity-80">
                 BSY started as a 3-day virtual event in July 2025, where we
                 partnered with Afriment and iSentry to provide real value to our
@@ -266,9 +254,11 @@ export default function Contact() {
                 opportunity at a time.
               </p>
             </div>
+
+            <hr/>
 {/* meet the team */}
             <div>
-              <h2 className="black text-center mt-xl mb-sm ">
+              <h2 className="black text-center mt-lg mb-[5px] ">
                 Meet Our Leadership Team
               </h2>
               <p className="black text-center mb-xl mx-auto opacity-70">
@@ -276,12 +266,12 @@ export default function Contact() {
                 passion to see youth thrive
               </p>
               <div>
-                <p className=" mb-lg black bg-black bg-opacity-10 rounded-full px-5 text-center max-w-[150px] mx-auto">
+                <p className=" mb-lg text-blue bg-cyan-500 bg-opacity-10 rounded-full px-5 text-center max-w-[150px] mx-auto">
                   Executives
                 </p>
-                <div ref={scrollRef} className="flex  gap-4 overflow-x-auto  ">
+                <div ref={scrollRef} className="flex  gap-4 overflow-x-auto snap-mandatory snap-x  ">
                   {executives.map((index) => (
-                    <div className="card bg-blue p-2 relative mx-auto ">
+                    <div className="card bg-blue p-2 relative mx-auto snap-center">
                       <img
                       loading="lazy"
                         src={index.image}
@@ -291,10 +281,10 @@ export default function Contact() {
 
                       <div
                         key={index}
-                        className="card p-2 px-5 bg-blue absolute bottom-2 "
+                        className="card p-2 px-5 bg-blue absolute bottom-[6px] "
                       >
-                        <p className="black ">{index.name}</p>
-                        <p className="text-xs mb-[-5px] black">{index.title}</p>
+                        <p className="white ">{index.name}</p>
+                        <p className="text-xs mb-[-5px] white">{index.title}</p>
                         <a
                           href={index.link}
                           target="_blank"
@@ -321,13 +311,13 @@ export default function Contact() {
               </div>
             </div>
 
-            <div>
-              <p className=" mb-lg black bg-black bg-opacity-10 rounded-full px-5 text-center max-w-[150px] mx-auto mt-lg">
+            <div className="mb-lg">
+              <p className=" mb-lg text-orange-900 bg-orange-500 bg-opacity-10 rounded-full px-5 text-center max-w-[150px] mx-auto mt-lg">
                 Team Leads
               </p>
-              <div ref={scrollRef2} className="flex  gap-4 overflow-x-auto  ">
+              <div ref={scrollRef2} className="flex  gap-4 overflow-x-auto snap-mandatory snap-x ">
                 {team.map((index) => (
-                  <div className="card bg-yellow p-2 relative mx-auto ">
+                  <div className="card bg-yellow p-2 relative mx-auto snap-center ">
                     <img
                     loading="lazy"
                       src={index.image}
@@ -337,7 +327,7 @@ export default function Contact() {
 
                     <div
                       key={index}
-                      className="card p-2 px-5 bg-yellow absolute bottom-2 "
+                      className="card p-2 px-5 bg-yellow absolute bottom-[6px] "
                     >
                       <p className="black ">{index.name}</p>
                       <p className="text-xs mb-[-5px] black">{index.title}</p>
@@ -345,7 +335,7 @@ export default function Contact() {
                         href={index.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" hover:underline hover:text-blue text-blue inline-flex text-[9px] items-center gap-1 bg-white px-2 rounded-full  "
+                        className=" hover:underline hover:text-white text-white inline-flex text-[9px] items-center gap-1 bg-black px-2 rounded-full  "
                       >
                         <FaLinkedinIn /> Meet {index.alias}
                       </a>
@@ -366,8 +356,9 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          <hr />
             {/* join the team */}
-            <h2 className="black text-center mt-xl mb-[10px]">
+            <h2 className="black text-center mt-lg mb-[5px]">
              Join the Team
             </h2>
             <p className="black mx-auto text-center mb-lg">Are you interested in working with BSY? Join here.</p>
