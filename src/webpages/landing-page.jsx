@@ -13,16 +13,17 @@ import {
 
 function LandingPage() {
   return (
-    <div className="bg-black">
+    <div >
       <Hero />
       <Story />
       <Brand />
       <Why />
+      <div className="bg-black">
       <Testimonials />
       <Resources />
       <Impact />
       <Faq />
-    </div>
+    </div></div>
   );
 }
 

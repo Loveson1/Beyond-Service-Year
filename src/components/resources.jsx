@@ -32,13 +32,13 @@ export default function Resources() {
   return (
     <div className="bg-gradient-to-b from-black to-blue ">
       <div className="container py-20">
-        <h1 className="text-center">Resources to get started</h1>
-        <p className="text-center mt-sm">Your Growth starts here </p>
+        <h1 className="text-center"  data-aos="fade-right" data-aos-delay="600" >Resources to get started</h1>
+        <p className="text-center mt-sm"  data-aos="fade-right" data-aos-delay="600" >Your Growth starts here </p>
         {/* resource card */}
 
-        <div className="flex gap-5 max-lg:flex-col mt-xl mb-lg ">
+        <div className="flex gap-5 max-lg:flex-col mt-xl mb-lg " >
            <div
-              
+               data-aos="fade-right" data-aos-delay="600" 
                 className="card-blue bg-yellow hover:-translate-y-2 hover:shadow-xl shadow-md duration-500  "
               >
                 <div className="flex-1 ">
@@ -77,7 +77,7 @@ export default function Resources() {
               </div>
         <div className="flex gap-5  max-lg:flex-col flex-2 ">
           {data.map((card, i) => (
-            <div key={i} className="card p-0 hover:-translate-y-2 hover:shadow-xl shadow-md duration-500">
+            <div key={i} className="card p-0 hover:-translate-y-2 hover:shadow-xl shadow-md duration-500 "  data-aos="fade-right" data-aos-delay="600" >
               <img
                 src={card.image}
                 loading="lazy"
@@ -140,7 +140,7 @@ export default function Resources() {
         
         </div>
         {/* button */}
-        <div className="flex justify-center">
+        <div className="flex justify-center"  data-aos="fade-up" data-aos-delay="600" >
          <Link to ="../resource">  <button className="btn-white  btn" >Load More</button></Link>
         </div>
       </div>

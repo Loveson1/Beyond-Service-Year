@@ -33,8 +33,8 @@ export default function Testimonials() {
     <div className="container pb-20">
       <div className="mx-auto">
         {/* headline */}
-        <h1 className="text-center mb-sm">Testimonials</h1>
-        <p className="text-center mb-xl">
+        <h1 className="text-center mb-sm"  data-aos="fade-down" data-aos-delay="500" >Testimonials</h1>
+        <p className="text-center mb-xl"  data-aos="fade-down" data-aos-delay="500" >
           Don&apos;t take our word for it. Here&apos;s what people like you are saying
         </p>
 
@@ -45,6 +45,8 @@ export default function Testimonials() {
             style={{
               height: `${visibleImages * imageHeight + (visibleImages - 1) * gap}px`,
             }}
+
+             data-aos="fade-down" data-aos-delay="400" 
           >
             <div
               className="flex flex-col gap-5 transition-transform duration-700 ease-in-out"
@@ -66,7 +68,7 @@ export default function Testimonials() {
           </div>
 
           {/* ==== Testimonial Content ==== */}
-          <div className="max-sm:w-[250px] sm:w-[500px] sm:h-[250px] justify-between flex flex-col bg-white p-8 rounded-[15px] shadow-md transition-all duration-700">
+          <div  data-aos="fade-down" data-aos-delay="600"  className="max-sm:w-[250px] sm:w-[500px] sm:h-[250px] justify-between flex flex-col bg-white p-8 rounded-[15px] shadow-md transition-all duration-700">
             <p className="mb-sm black text-xs">{testimonials[activeIndex].content}</p>
             <div><h2 className="font-bold black">{testimonials[activeIndex].name}</h2>
             <hr className="my-2" />
@@ -74,7 +76,7 @@ export default function Testimonials() {
           </div>
 
           {/* ==== Indicator ==== */}
-          <div className="flex flex-col gap-3 max-sm:flex-row max-sm:items-center bg-white py-2 px-3 sm:py-3 sm:px-2 rounded-3xl">
+          <div  data-aos="fade-down" data-aos-delay="800"  className="flex flex-col gap-3 max-sm:flex-row max-sm:items-center bg-white py-2 px-3 sm:py-3 sm:px-2 rounded-3xl">
             {testimonials.map((_, index) => (
               <button
                 key={index}

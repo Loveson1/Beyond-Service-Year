@@ -38,7 +38,7 @@ export default function Faq() {
   };
 
   return (
-    <div className=" bg-gradient-to-b from-blue to-black">
+    <div className=" bg-gradient-to-b from-blue to-black"  data-aos="fade-up" data-aos-delay="200" >
       <div className=" container ">
         {/* faq head */}
         <h1 className="text-center pt-10 mb-sm">Frequently asked questions</h1>

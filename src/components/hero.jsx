@@ -7,14 +7,14 @@ export default function Hero() {
   return (
    <div className='xl:bg-hero md:bg-hero-tab bg-opacity-20 bg-blend-darken bg-[#7BCFE9] max-sm:bg-hero-mobile  bg-cover max-sm:bg-center bg-no-repeat w-screen min-h-[100vh] max-sm:h-[1000px] '>
     {/* hero section */}
-      <div className='container   max-sm:flex flex-col   items-start'>
+      <div className='container   max-sm:flex flex-col   items-start' >
         <div >
         {/* headline and subhead */}
-        <h1 className="xl:mt-[7%] lg:w-[720px]  mt-[25%]">
+        <h1 className="xl:mt-[7%] lg:w-[720px]  mt-[25%]" data-aos="fade-down" data-aos-delay="700" >
           Equipping <span className="yellow">Nigerian youths </span>to <span className='font-boska'>become builders</span> of
           the <span className="yellow">life they desire</span>
         </h1>
-        <p className="mt-sm opacity-90 md:w-[600px]">
+        <p className="mt-sm opacity-90 md:w-[600px]" data-aos="fade-right" data-aos-delay="1000" >
           We provide free resources, skill-building opportunities, and a
           supportive
         
@@ -24,7 +24,7 @@ export default function Hero() {
         </p>
         </div>
         {/* buttons */}
-        <div className="flex gap-5 mt-lg pb-[100px]  max-sm:flex-col">
+        <div className="flex gap-5 mt-lg pb-[100px]  max-sm:flex-col" data-aos="fade-up" data-aos-delay="1200"  >
         <a href="https://bit.ly/4oomRUg" target="_blank" rel="noopener noreferrer"><button className="btn-yellow btn w-full"> Join the Movement  </button></a>
         <Link to ="../resource"><button className="btn-white  btn"> Check our Resources</button></Link>
         </div>

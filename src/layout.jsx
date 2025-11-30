@@ -7,7 +7,7 @@ const Layout = () => {
     <div>
       <Navbar />
       <Outlet />
-      <Footer />
+      <div className="bg-black"><Footer /></div>
     </div>
   );
 };

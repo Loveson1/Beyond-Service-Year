@@ -10,7 +10,7 @@ export default function Brand() {
   const doubledLogos = [...logos, ...logos];
 
   return (
-    <div className="text-blue-900 bg-gray-300   ">
+    <div className="text-blue-900 bg-gray-300   " data-aos="fade-up" data-aos-delay="500"  >
       <h2 className="black font-bold py-5 text-center opacity-40">Our Trusted Partners</h2>
       {/* logo with animation */}
       <div className="relative w-full overflow-hidden bg-white">
