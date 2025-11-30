@@ -1,18 +1,9 @@
 import { FaXTwitter, FaFacebook, FaLinkedinIn } from "react-icons/fa6";
-import image from "../assets/images/res1.webp";
-import image1 from "../assets/images/res2.webp";
-import image2 from "../assets/images/res3.webp";
+import image from "../assets/images/in.webp";
+import image1 from "../assets/images/cv.webp";
 import { Link } from "react-router-dom";
 export default function Resources() {
   let data = [
-    {
-      image: image2,
-      title: "How to own your space in the digital world",
-      content:
-        "This is a packed video that launch you into how  to prepare and groom yourself in the digital world",
-      time: "2hrs",
-      link: "#",
-    },
     {
       image: image1,
       title: "How to craft a selling CV",
@@ -44,16 +35,57 @@ export default function Resources() {
         <h1 className="text-center">Resources to get started</h1>
         <p className="text-center mt-sm">Your Growth starts here </p>
         {/* resource card */}
-        <div className="flex gap-5 my-xl max-lg:flex-col ">
+
+        <div className="flex gap-5">
+           <div
+              
+                className="card-blue bg-yellow hover:-translate-y-2 hover:shadow-xl shadow-md duration-500 my-xl "
+              >
+                <div className="flex-1 ">
+                    <iframe
+                     className="rounded-[15px] w-full"
+                      src="https://www.youtube.com/embed/r9acT6Hww64"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title="Embedded YouTube Video"
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                <div className="px-5 py-5 ">
+                <div className="flex  gap-5 justify-between">  
+                  <div >
+                   <p className="mb-sm hover:text-white font-bold black opacity-90 max-w-[350px]">
+                     BSY2025 WEBINAR Day 1 – Digital Positioning for Remote Work
+                    </p> 
+                      
+                    </div>
+                  <div>
+                    <p className="black px-2 py-1 w-14 text-center text-xs bg-white rounded-2xl">
+                   2hrs
+                      </p></div>
+                    </div>
+                  <div className="flex gap-5 justify-between">
+                    <p className="opacity-100 black text-xs max-w-[350px]">
+                         This webinar featured Ekwutosi Cynthia Okeh (Digital Witch founder) and Alice Joshua (Remote Work Padi founder), who shared their journeys from traditional careers to earning in foreign currency remotely, covering essential topics like skill identification, digital positioning strategies, and practical steps for Nigerian graduates and corp members to secure remote opportunities.,
+
+                    </p>
+                    
+                  </div>
+                  <div className="flex justify-between items-center gap-8 mt-sm">
+                  </div>
+                </div>
+              </div>
+        <div className="flex gap-5 my-xl max-lg:flex-col flex-2 ">
           {data.map((card, i) => (
-            <div key={i} className="card">
+            <div key={i} className="card p-0 hover:-translate-y-2 hover:shadow-xl shadow-md duration-500">
               <img
                 src={card.image}
                 loading="lazy"
                 alt="image"
-                className="rounded-t-[15px] w-full max-h-[180px] border-black border"
+                className="rounded-t-[15px] w-full max-h-[180px] border-black border "
               />
-              <a href={card.link}>
+              <div className="px-6">
+              <a href={card.inlink}>
                 <p className="my-sm hover:text-white font-bold black max-w-[350px]">
                   {card.title}
                 </p>
@@ -101,9 +133,11 @@ export default function Resources() {
                     {card.glink}
                   </a>
                 </div>
-              </div>
+              </div></div>
             </div></div>
           ))}
+        </div>
+        
         </div>
         {/* button */}
         <div className="flex justify-center">

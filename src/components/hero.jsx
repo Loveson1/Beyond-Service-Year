@@ -10,11 +10,11 @@ export default function Hero() {
       <div className='container   max-sm:flex flex-col   items-start'>
         <div >
         {/* headline and subhead */}
-        <h1 className="sm:mt-[7%] lg:w-[720px]  mt-[15%]">
+        <h1 className="xl:mt-[7%] lg:w-[720px]  mt-[25%]">
           Equipping <span className="yellow">Nigerian youths </span>to <span className='font-boska'>become builders</span> of
           the <span className="yellow">life they desire</span>
         </h1>
-        <p className="mt-sm opacity-90 lg:w-[600px]">
+        <p className="mt-sm opacity-90 md:w-[600px]">
           We provide free resources, skill-building opportunities, and a
           supportive
         
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
         {/* buttons */}
         <div className="flex gap-5 mt-lg pb-[100px]  max-sm:flex-col">
-          <button className="btn-yellow btn"> Join the Movement  </button>
+        <a href="https://bit.ly/4oomRUg" target="_blank" rel="noopener noreferrer"><button className="btn-yellow btn w-full"> Join the Movement  </button></a>
         <Link to ="../resource"><button className="btn-white  btn"> Check our Resources</button></Link>
         </div>
       </div>

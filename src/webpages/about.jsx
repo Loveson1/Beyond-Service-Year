@@ -131,10 +131,10 @@ export default function About() {
         {/* Story */}
         <div className="py-16 container">
           <h2 className="black text-center mb-[5px]">Our Story</h2>
-          <p className="black text-center mb-xl mx-auto opacity-70">
+          <p className="black text-center mb-lg mx-auto opacity-70">
             Here's how it all started, not with perfection but courage
           </p>
-          <div className=" flex max-sm:flex-col gap-[20px] px-10 py-16 max-w-full   bg-white rounded-xl shadow-md hover:shadow-xl duration-500">
+          <div className=" flex max-sm:flex-col gap-[20px]  pb-16 max-w-full  ">
             <p className="black opacity-80 text max-w-[500px] mx-auto ">
               <span className="font-black text-3xl">B</span>eyond Service Year
               (BSY) was born from a question that haunts thousands of Nigerian
@@ -358,7 +358,7 @@ export default function About() {
           </div>
           <hr />
             {/* join the team */}
-            <h2 className="black text-center mt-lg mb-[5px]">
+            <h2 className="black text-center mt-lg mb-[5px]" id="join">
              Join the Team
             </h2>
             <p className="black mx-auto text-center mb-lg">Are you interested in working with BSY? Join here.</p>
@@ -368,7 +368,9 @@ export default function About() {
               <div><h2 className="black mt-sm">One of us! One of us!</h2>
               <p className="black mb-sm">Join the best team you'll ever be part of</p>
               </div>
-              <button className="btn-yellow block sm:w-1/3 w-full">Join Us</button></div>
+
+          <a href="https://bit.ly/4pwN57K" target="_blank" rel=" noopener noreferer  " className="block ">  <button className="btn-yellow block  w-full">Join Us</button> </a> 
+           </div>
             </div>
         </div>
       </main>

@@ -139,9 +139,10 @@ export default function Partnership() {
                 shot at success, then let's talk. Because the best partnerships
                 aren't transactional, they're transformational.
               </p>
-              <button className="btn-yellow btn block max-sm:w-full">
+              <a target="_blank"   rel="noopener noreferrer" href="https://bit.ly/49HQGvf"><button className="btn-yellow btn block max-sm:w-full">
                 Partner with BSY
-              </button>
+              </button></a>
+              
             </div>
             <div className="flex-1">
               <img
@@ -218,12 +219,12 @@ export default function Partnership() {
 
               <div
                 ref={scrollRef}
-                className="flex  gap-6 max-sm:overflow-x-auto snap-mandatory snap-x scroll-smooth"
+                className="flex  gap-6 overflow-x-auto snap-mandatory snap-x scroll-smooth"
               >
                 {partners.map((index) => (
                   <div
                     key={index}
-                    className="card bg-white min-w-[300px] snap-center"
+                    className="card bg-white min-w-[330px] snap-center"
                   >
                     <img
                       src={index.image}
@@ -311,9 +312,12 @@ export default function Partnership() {
             part of that story, let's partner up.</h2>
             </div>
             <div className="flex-1 justify-items-end">
-               <button className="btn-yellow btn block max-sm:w-full ">
+       
+                 <a target="_blank"   rel="noopener noreferrer"  href="https://bit.ly/49HQGvf" className="w-full justify-items-end block "><button className="btn-yellow btn block max-sm:w-full">
                 Partner with BSY
-              </button>
+              </button></a>
+              
+         
               </div>
             
         </div>  

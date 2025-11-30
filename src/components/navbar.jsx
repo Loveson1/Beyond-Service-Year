@@ -34,7 +34,7 @@ export default function Navbar() {
                   {link.title}
                 </NavLink>
               ))}
-              <button className="btn-yellow btn">Join the movement</button>
+                <a href="https://bit.ly/4oomRUg" target="_blank" rel="noopener noreferrer"><button className="btn-yellow btn">Join the movement</button></a>
             </div>
           </div>
         </div>
@@ -111,6 +111,9 @@ export default function Navbar() {
                     </ul>
                   </NavLink>
                 ))}
+
+                <a href="https://bit.ly/4oomRUg" target="_blank" rel="noopener noreferrer"><button className="btn-yellow btn">Join the movement</button></a>
+
               </div>
             </div>
           )}
