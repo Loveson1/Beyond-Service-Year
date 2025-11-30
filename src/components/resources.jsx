@@ -36,10 +36,10 @@ export default function Resources() {
         <p className="text-center mt-sm">Your Growth starts here </p>
         {/* resource card */}
 
-        <div className="flex gap-5">
+        <div className="flex gap-5 max-lg:flex-col mt-xl mb-lg ">
            <div
               
-                className="card-blue bg-yellow hover:-translate-y-2 hover:shadow-xl shadow-md duration-500 my-xl "
+                className="card-blue bg-yellow hover:-translate-y-2 hover:shadow-xl shadow-md duration-500  "
               >
                 <div className="flex-1 ">
                     <iframe
@@ -75,7 +75,7 @@ export default function Resources() {
                   </div>
                 </div>
               </div>
-        <div className="flex gap-5 my-xl max-lg:flex-col flex-2 ">
+        <div className="flex gap-5  max-lg:flex-col flex-2 ">
           {data.map((card, i) => (
             <div key={i} className="card p-0 hover:-translate-y-2 hover:shadow-xl shadow-md duration-500">
               <img
@@ -84,7 +84,7 @@ export default function Resources() {
                 alt="image"
                 className="rounded-t-[15px] w-full max-h-[180px] border-black border "
               />
-              <div className="px-6">
+              <div className="px-6 py-2">
               <a href={card.inlink}>
                 <p className="my-sm hover:text-white font-bold black max-w-[350px]">
                   {card.title}
@@ -98,7 +98,7 @@ export default function Resources() {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-between items-center gap-8 mt-sm">
+              <div className="flex  justify-between items-center gap-8 mt-sm">
               <p className="text-[10px] black m-0">{card.info}</p>
               <div className="flex gap-5 items-end justify-end ">
                 <div>

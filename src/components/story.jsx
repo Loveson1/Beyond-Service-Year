@@ -26,7 +26,7 @@ export default function Story() {
             </p>
             <div className="flex i gap-5 mt-lg max-lg:flex-col md:flex-row  mb-lg">
               <a href="https://bit.ly/4oomRUg" target="_blank" rel="noopener noreferrer"><button className="btn-yellow btn max-sm:w-full"> Join the Movement</button></a>
-             <Link to="../about"> <button className="btn-white  btn"> Read our Story</button></Link>
+             <Link to="../about"> <button className="btn-white  btn w-full"> Read our Story</button></Link>
             </div>
           </div>
           {/* buttons */}
