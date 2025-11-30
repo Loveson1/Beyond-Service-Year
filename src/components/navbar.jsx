@@ -126,26 +126,19 @@ export default function Navbar() {
             />
 
             <div
-              className={`sidebar justify-start py-28 px-12 flex-col flex bg-black fixed top-0 right-0 min-w-[200px] h-full ring-2 ring-yellow max-w-[500px] z-40`}
+              className={`sidebar justify-start py-28 px-12 flex-col flex bg-black fixed top-0 right-0 min-w-[200px] min-h-[1000vh] ring-2 ring-yellow w-full z-40`}
             >
               {navLink.map((link, index) => (
                 <NavLink
                   key={link.id}
                   to={`/${link.id}`}
                   className={({ isActive }) =>
-                    isActive ? "font-bold" : ""
-                  }
+                    isActive ? "font-bold text-yellow" : ""}
+
+                   onClick={() => settoggle((prev) => !prev)}
                 >
-                  <ul
-                    onClick={() => settoggle((prev) => !prev)}
-                  >
-                    <li
-                      key={link.id}
-                      className={`cursor-pointer mb-5 list-none sm:flex`}
-                    >
-                      <a href={`#${link.id}`}>{link.title}</a>
-                    </li>
-                  </ul>
+                 <button className="cursor-pointer mb-5 list-none sm:flex">{link.title}</button>
+                 
                 </NavLink>
               ))}
 
