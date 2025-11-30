@@ -38,7 +38,7 @@ export default function Testimonials() {
           Don&apos;t take our word for it. Here&apos;s what people like you are saying
         </p>
 
-        <div className="flex gap-5 sm:gap-10 justify-center max-sm:flex-col items-end max-sm:items-center">
+        <div className="flex gap-5 sm:gap-10 justify-center max-sm:flex-col items-end max-sm:items-center"  data-aos="fade-up" data-aos-delay="200">
           {/* ==== Testifier images ==== */}
           <div
             className="overflow-hidden h-[830px]" // show 3 images (3*250 + 2*20)
@@ -46,7 +46,7 @@ export default function Testimonials() {
               height: `${visibleImages * imageHeight + (visibleImages - 1) * gap}px`,
             }}
 
-             data-aos="fade-down" data-aos-delay="400" 
+
           >
             <div
               className="flex flex-col gap-5 transition-transform duration-700 ease-in-out"
@@ -68,7 +68,7 @@ export default function Testimonials() {
           </div>
 
           {/* ==== Testimonial Content ==== */}
-          <div  data-aos="fade-down" data-aos-delay="600"  className="max-sm:w-[250px] sm:w-[500px] sm:h-[250px] justify-between flex flex-col bg-white p-8 rounded-[15px] shadow-md transition-all duration-700">
+          <div    className="max-sm:w-[250px] sm:w-[500px] sm:h-[250px] justify-between flex flex-col bg-white p-8 rounded-[15px] shadow-md transition-all duration-700">
             <p className="mb-sm black text-xs">{testimonials[activeIndex].content}</p>
             <div><h2 className="font-bold black">{testimonials[activeIndex].name}</h2>
             <hr className="my-2" />
@@ -76,7 +76,7 @@ export default function Testimonials() {
           </div>
 
           {/* ==== Indicator ==== */}
-          <div  data-aos="fade-down" data-aos-delay="800"  className="flex flex-col gap-3 max-sm:flex-row max-sm:items-center bg-white py-2 px-3 sm:py-3 sm:px-2 rounded-3xl">
+          <div className="flex flex-col gap-3 max-sm:flex-row max-sm:items-center bg-white py-2 px-3 sm:py-3 sm:px-2 rounded-3xl">
             {testimonials.map((_, index) => (
               <button
                 key={index}

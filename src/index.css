@@ -2,67 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
   margin: 0 auto;
-
   font-family: "Satoshi", "Boska";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-background-color: #efefef;
+  background-color: #efefef;
   overflow-x: hidden;
   padding: 0;
   scroll-behavior: smooth;
- 
 }
 
 @font-face {
   font-family: "Satoshi";
   src: url("./assets/fonts/Satoshi-Regular.woff") format("woff"),
-  url("./assets/fonts/Satoshi-Regular.woff2") format("woff2")
-    url("./assets/fonts/Satoshi-Regular.ttf") format("truetype");
+    url("./assets/fonts/Satoshi-Regular.woff2") format("woff2")
+      url("./assets/fonts/Satoshi-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Satoshi";
   src: url("./assets/fonts/Satoshi-Bold.woff") format("woff"),
-  url("./assets/fonts/Satoshi-Bold.woff2") format("woff2")
-    url("./assets/fonts/Satoshi-Bold.ttf") format("truetype");
+    url("./assets/fonts/Satoshi-Bold.woff2") format("woff2")
+      url("./assets/fonts/Satoshi-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Boska";
   src: url("./assets/fonts/Boska-MediumItalic.woff") format("woff"),
-  url("./assets/fonts/Boska-MediumItalic.woff2") format("woff2"),
-  url("./assets/fonts/Boska-MediumItalic.ttf") format("truetype");
+    url("./assets/fonts/Boska-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/Boska-MediumItalic.ttf") format("truetype");
   font-weight: normal;
 }
-
 
 @layer base {
   /* utility classes */
 
   .container {
-    @apply pt-[30px] sm:px-[50px] px-[24px] mx-auto ;
+    @apply pt-[30px] sm:px-[50px] px-[24px] mx-auto;
   }
 
   .yellow {
     @apply text-yellow;
   }
-    .black {
+  .black {
     @apply text-black;
   }
 
   .card {
-    @apply p-[24px] rounded-[15px] bg-yellow   border-none ;
+    @apply p-[24px] rounded-[15px] bg-yellow   border-none;
   }
   .card-blue {
-    @apply rounded-[15px] bg-blue   border-none ;
+    @apply rounded-[15px] bg-blue   border-none;
   }
   .card-img {
-    @apply  rounded-[15px]  bg-blue bg-cover hover:scale-[103%] duration-1000 p-[24px] ;
+    @apply rounded-[15px]  bg-blue bg-cover hover:scale-[103%] duration-1000 p-[24px];
   }
 
   .animate-scroll:hover {
@@ -109,19 +106,17 @@ background-color: #efefef;
   }
 
   img {
-    @apply object-cover  ; 
+    @apply object-cover;
   }
 
-  ::-webkit-scrollbar{
-   @apply hidden;
-   
+  ::-webkit-scrollbar {
+    @apply hidden;
   }
-.footer-form{
-  @apply my-[10px] border-gray-300 border-[1px] rounded-[9px] p-2 ;
-}
+  .footer-form {
+    @apply my-[10px] border-gray-300 border-[1px] rounded-[9px] p-2;
+  }
 
-.form{
-  @apply  border-gray-300 border-[1px] rounded-[9px] p-2 ;
+  .form {
+    @apply border-gray-300 border-[1px] rounded-[9px] p-2;
+  }
 }
-}
-

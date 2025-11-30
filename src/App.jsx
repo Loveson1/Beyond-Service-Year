@@ -17,6 +17,7 @@ function App() {
     AOS.init({
       duration: 1000, // animation duration in ms
       offset: 120,
+      once:"true"
     });
   }, []);
 
